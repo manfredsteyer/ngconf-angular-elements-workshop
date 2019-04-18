@@ -11,7 +11,7 @@
       "schematics": {},
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:build",
           "options": {
             "outputPath": "dist/labs-demo",
             "index": "src/index.html",
@@ -23,7 +23,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/paper-dashboard.css",
+              "src/assets/css/demo.css",
+              "src/assets/css/themify-icons.css"
+            ],
+            "lazyModules": [
+              "src/app/dashboard/lazy-dashboard-tile/lazy-dashboard-tile.module"
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -56,7 +63,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "labs-demo:build"
           },
@@ -73,7 +80,7 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "ngx-build-plus:karma",
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
@@ -134,3 +141,6 @@
   },
   "defaultProject": "labs-demo"
 }
+
+
+
