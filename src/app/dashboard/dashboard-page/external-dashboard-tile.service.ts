@@ -13,10 +13,6 @@ export class ExternalDashboardTileService {
     if (this.loaded) return;
 
     // TODO: Load script
-    // const script = document.createElement('script');
-    // script.src = 'assets/external-dashboard-tile.bundle.js';
-    // document.body.appendChild(script);
-    // this.loaded = true;
   }
 
 }

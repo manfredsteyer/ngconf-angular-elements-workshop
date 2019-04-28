@@ -8,7 +8,7 @@ import { CustomCheckboxDirective } from './custom-checkbox.directive';
     exports: [CustomCheckboxDirective],
     providers: [],
 })
-export class CustomCheckboxModule { 
+export class CustomCheckboxModule {
 
     constructor() {
         // TODO: Wrap and register element
