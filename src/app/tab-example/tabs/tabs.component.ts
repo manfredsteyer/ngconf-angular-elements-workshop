@@ -36,19 +36,12 @@ export class TabsComponent {
 
   slotChange($event) {
     // TODO: Get projected tabs and store them in this.tabs
-    // const assigned = $event.target.assignedNodes();
-    // this.tabs = assigned.filter(n => n.localName === 'my-tab');
 
     // TODO: Activate first tab
-    // if (this.tabs.length > 0) {
-    //   this.activate(this.tabs[0]);
-    // }
   }
 
   activate(tab: TabComponent) {
     // TODO: Hide all tabs but the passed one
-    // this.tabs.forEach(t => t['hidden'] = true);
-    // tab['hidden'] = false;
   }
 
 }

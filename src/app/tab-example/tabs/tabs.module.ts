@@ -12,14 +12,14 @@ import { TabComponent } from './tab.component';
   exports: [TabsComponent, TabComponent],
   entryComponents: [TabsComponent, TabComponent]
 })
-export class TabsModule { 
+export class TabsModule {
 
   constructor(injector: Injector) {
 
     // TODO: Wrap and register elements
     // const tabsElm = createCustomElement(TabsComponent, { injector });
     // customElements.define('my-tabs', tabsElm);
-    
+
     // const tabElm = createCustomElement(TabComponent, { injector });
     // customElements.define('my-tab', tabElm);
   }
