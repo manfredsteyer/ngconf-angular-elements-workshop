@@ -8,9 +8,9 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
       <h2>{{title}}</h2>
 
       <div id="content">
-        <!-- TODO: Add slot here -->
+        <slot></slot>
         <div class="small">
-          <!-- TODO: Add slot[name=footer] here -->
+          <slot name="footer"></slot>
         </div>
       </div>
 
