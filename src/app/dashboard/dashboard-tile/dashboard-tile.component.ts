@@ -1,8 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-tile',
-  templateUrl: './dashboard-tile.component.html'
+  templateUrl: './dashboard-tile.component.html',
+  // styles: ['.card .title { color: green; }'],
 })
 export class DashboardTileComponent implements OnInit {
   @Input() a: number;
@@ -21,7 +22,7 @@ export class DashboardTileComponent implements OnInit {
       {
         name: 'b',
         value: this.b
-      },     
+      },
       {
         name: 'c',
         value: this.c

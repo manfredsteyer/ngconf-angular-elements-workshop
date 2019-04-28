@@ -4,8 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
   expertMode: boolean = true;
