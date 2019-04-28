@@ -27,13 +27,22 @@ export class DashboardPageComponent {
     ];
 
     // TODO: Add custom element to page
+    const content = document.getElementById('content');
+    const tile = document.createElement(tileKind);
+
+    tile.setAttribute('class', 'col-lg-4 col-md-3 col-sm-2');
+    tile.setAttribute('a', '' + data[0]);
+    tile.setAttribute('b', '' + data[1]);
+    tile.setAttribute('c', '' + data[2]);
+
+    content.appendChild(tile);
 
   }
 
   addLazy(): void {
 
     // tslint:disable-next-line:no-console
-    console.debug(`This exercise does not run in StackBlitz, hence it is part of the director's cut.`);
+    console.debug(`This exercise does not run in StackBlitz, hence it is part of the director's cut of this exercise`);
 
     this.lazyService.load().then(_ => {
       this._add('lazy-dashboard-tile');
