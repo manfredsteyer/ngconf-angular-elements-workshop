@@ -21,7 +21,7 @@ export class DashboardTileComponent implements OnInit {
       {
         name: 'b',
         value: this.b
-      },     
+      },
       {
         name: 'c',
         value: this.c
