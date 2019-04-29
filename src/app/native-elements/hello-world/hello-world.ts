@@ -2,20 +2,20 @@
 export class HelloWorldElement extends HTMLElement {
 
     _name: string;
-    
-    get name() {    
-        return this._name; 
+
+    get name() {
+        return this._name;
     }
 
-    set name(value: string) { 
-        this._name = value; 
+    set name(value: string) {
+        this._name = value;
         this.updateNameBinding();
     }
 
     constructor() {
         super();
         this.attachShadow({mode: 'open'});
-        
+
         this.shadowRoot.innerHTML = `
             <style>
 
@@ -57,7 +57,7 @@ export class HelloWorldElement extends HTMLElement {
     }
 
     disconnectedCallback() {
-        // Remove EventListener here, 
+        // Remove EventListener here,
         // e. g. main.removeEventListener(...)
     }
 

@@ -35,9 +35,10 @@ export class TabsComponent {
   constructor() { }
 
   slotChange($event) {
-    // TODO: Get projected tabs and store them in this.tabs
+    // TODO: Get projected tabs from $event.target.assignedNodes();
+    //   and store them in this.tabs
 
-    // TODO: Activate first tab
+ivate first tab
   }
 
   activate(tab: TabComponent) {
