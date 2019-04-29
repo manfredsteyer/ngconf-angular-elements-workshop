@@ -24,7 +24,7 @@
     "@webcomponents/webcomponentsjs": "^2.2.9",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
-    "ngx-build-plus": "^7.8.1",
+    "ngx-build-plus": "^7.8.2",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "web-animations-js": "^2.3.1",
