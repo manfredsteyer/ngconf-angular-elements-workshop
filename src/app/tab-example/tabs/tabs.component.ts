@@ -35,6 +35,7 @@ export class TabsComponent {
   constructor() { }
 
   slotChange($event) {
+<<<<<<< HEAD
 
     const assigned = $event.target.assignedNodes();
     this.tabs = assigned.filter(n => n.localName === 'my-tab');
@@ -43,6 +44,12 @@ export class TabsComponent {
         this.activate(this.tabs[0]);
     }
 
+=======
+    // TODO: Get projected tabs from $event.target.assignedNodes();
+    //   and store them in this.tabs
+
+ivate first tab
+>>>>>>> 55c6e27... disable linting for this demo
   }
 
   activate(tab: TabComponent) {
