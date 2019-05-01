@@ -2,7 +2,13 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-tile',
-  templateUrl: './dashboard-tile.component.html'
+  templateUrl: './dashboard-tile.component.html',
+  styles: [`
+    .card .title {
+      color: green; /* fallback value */
+      color: var(--my-color)
+    }
+  `]
 })
 export class DashboardTileComponent implements OnInit {
   @Input() a: number;
