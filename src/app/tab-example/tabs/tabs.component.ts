@@ -12,7 +12,7 @@ import { TabComponent } from './tab.component';
     </div>
 
     <div  style="clear:both;">
-      <slot></slot>
+      <slot (slotchange)="slotChange($event)"></slot>
       <!-- ^^ TODO: Register for slotchange event here -->
     </div>
 
@@ -37,10 +37,14 @@ export class TabsComponent {
   slotChange($event) {
     // TODO: Get projected tabs from $event.target.assignedNodes();
     //   and store them in this.tabs
+
+    this.tabs = $event.target.assignedNodes();
+    this.activate(this.tabs[0]);
   }
 
   activate(tab: TabComponent) {
-    // TODO: Hide all tabs but the passed one
+    this.tabs.forEach(t => t['hidden'] = true);
+    tab['hidden'] = false;
   }
 
 }

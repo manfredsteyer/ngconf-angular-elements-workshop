@@ -39,7 +39,7 @@ import { CustomCheckboxModule } from './native-elements/custom-checkbox/custom-c
    ],
    providers: [],
    schemas: [
-      // TODO: Add CUSTOM_ELEMENTS_SCHEMA
+      CUSTOM_ELEMENTS_SCHEMA
    ],
    bootstrap: [
       AppComponent

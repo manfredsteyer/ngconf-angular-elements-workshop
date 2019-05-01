@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "npx-build-plus:copy-assets": "node copy-wc-polyfill.js"
   },
   "private": true,
   "dependencies": {
@@ -21,8 +22,10 @@
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
     "@swimlane/ngx-charts": "^10.1.0",
+    "@webcomponents/custom-elements": "^1.2.4",
     "@webcomponents/webcomponentsjs": "^2.2.9",
     "classlist.js": "^1.1.20150312",
+    "copy": "^0.3.2",
     "core-js": "^2.5.4",
     "ngx-build-plus": "^7.8.2",
     "rxjs": "~6.3.3",

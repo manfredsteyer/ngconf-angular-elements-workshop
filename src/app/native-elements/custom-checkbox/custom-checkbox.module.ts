@@ -12,7 +12,7 @@ export class CustomCheckboxModule {
 
     constructor() {
         // TODO: Wrap and register element
-        // customElements.define('custom-checkbox', CustomCheckboxElement);
+        customElements.define('custom-checkbox', CustomCheckboxElement);
     }
 
 }

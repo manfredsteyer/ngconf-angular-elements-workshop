@@ -17,11 +17,11 @@ export class TabsModule {
   constructor(injector: Injector) {
 
     // TODO: Wrap and register elements
-    // const tabsElm = createCustomElement(TabsComponent, { injector });
-    // customElements.define('my-tabs', tabsElm);
+    const tabsElm = createCustomElement(TabsComponent, { injector });
+    customElements.define('my-tabs', tabsElm);
 
-    // const tabElm = createCustomElement(TabComponent, { injector });
-    // customElements.define('my-tab', tabElm);
+    const tabElm = createCustomElement(TabComponent, { injector });
+    customElements.define('my-tab', tabElm);
   }
 
 }

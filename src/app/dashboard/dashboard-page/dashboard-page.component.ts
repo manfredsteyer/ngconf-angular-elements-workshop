@@ -27,6 +27,18 @@ export class DashboardPageComponent {
     ];
 
     // TODO: Add custom element to page
+    const tile = document.createElement(tileKind);
+    // tile['a'] = 1;
+    tile.setAttribute('class', 'col-lg-4');
+    tile.setAttribute('a', data[0] + '');
+    tile.setAttribute('b', data[1] + '');
+    tile.setAttribute('c', data[2] + '');
+
+    tile.addEventListener('click', () => { /* handler */ })
+
+    const content = document.getElementById('content');
+    content.appendChild(tile);
+
 
   }
 

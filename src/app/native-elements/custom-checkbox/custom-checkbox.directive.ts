@@ -6,6 +6,12 @@ import { Directive, HostListener, Output, EventEmitter } from '@angular/core';
 export class CustomCheckboxDirective {
 
   // TODO: Provide checkedChange event
+  @Output() checkedChange = new EventEmitter<boolean>();
 
   // TODO: Provide host listener for changed event and delegate to checkedChange
+  @HostListener('changed', ['$event'])
+  changed($event) {
+    this.checkedChange.next($event.detail);
+  }
+
 }
